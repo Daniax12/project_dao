@@ -1,0 +1,132 @@
+InfoCompta ic = new InfoCompta();
+BddObject.createTable(ic, connection);
+BddObject.createSequence(ic, connection);
+
+InfoGeneral ig = new InfoGeneral();
+BddObject.createTable(ig, connection);
+BddObject.createSequence(ig, connection);
+
+Nif nif = new Nif();
+BddObject.createTable(nif, connection);
+BddObject.createSequence(nif, connection);
+
+Rcs rcs = new Rcs();
+BddObject.createTable(rcs, connection);
+BddObject.createSequence(rcs, connection);
+
+Employe emp = new Employe();
+BddObject.createTable(emp, connection);
+BddObject.createSequence(emp, connection);
+
+RacineCompte rc = new RacineCompte();
+BddObject.createSequence(rc, connection);
+BddObject.createTable(rc, connection);
+
+
+            RacineCompte cap = new RacineCompte(null, "1", "Capitaux");
+            BddObject.insertInDatabase(cap, connection);
+            
+            RacineCompte immo = new RacineCompte(null, "2", "Immobilisations");
+            BddObject.insertInDatabase(immo, connection);
+            
+            RacineCompte client = new RacineCompte(null, "41", "Client");
+            BddObject.insertInDatabase(client, connection);
+            
+            RacineCompte frn = new RacineCompte(null, "40", "Fournisseurs");
+            BddObject.insertInDatabase(frn, connection);
+            
+            RacineCompte tva = new RacineCompte(null, "445", "TVA");
+            BddObject.insertInDatabase(tva, connection);
+            
+            RacineCompte caisse = new RacineCompte(null, "53", "Caisse");
+            BddObject.insertInDatabase(caisse, connection);
+            
+            RacineCompte banque = new RacineCompte(null, "512", "Banque");
+            BddObject.insertInDatabase(banque, connection);
+            
+            RacineCompte charge = new RacineCompte(null, "6", "Charges");
+            BddObject.insertInDatabase(charge, connection);
+            
+            RacineCompte prod = new RacineCompte(null, "7", "Produits");
+            BddObject.insertInDatabase(prod, connection);
+            
+            RacineCompte stock = new RacineCompte(null, "3", "Stock");
+            BddObject.insertInDatabase(stock, connection);            
+
+CompteGeneral cg = new CompteGeneral();
+BddObject.createTable(cg, connection);
+BddObject.createSequence(cg, connection);
+
+            
+CompteTiers ct = new CompteTiers();
+BddObject.createTable(ct, connection);
+BddObject.createSequence(ct, connection);
+
+            
+CodeJournal cj = new CodeJournal();
+BddObject.createSequence(cj, connection);
+BddObject.createTable(cj, connection);
+
+Devise devise = new Devise();
+BddObject.createSequence(devise, connection);
+BddObject.createTable(devise, connection);
+
+Devise devise = new Devise();
+BddObject.createSequence(devise, connection);
+BddObject.createTable(devise, connection);
+
+DeviseChange dc = new DeviseChange();
+BddObject.createSequence(dc, connection);
+BddObject.createTable(dc, connection);
+
+
+            PieceRef pr = new PieceRef();
+            BddObject.createTable(pr, connection);
+            BddObject.createSequence(pr, connection);
+            
+            PieceRef p1 = new PieceRef(null, "AC", "Avoir Client");
+            BddObject.insertInDatabase(p1, connection);
+            
+                        PieceRef p2 = new PieceRef(null, "AF", "Avoir Fournisseur");
+            BddObject.insertInDatabase(p2, connection);
+            
+                        PieceRef p3 = new PieceRef(null, "BE", "Bordereau d'escompte");
+            BddObject.insertInDatabase(p3, connection);
+            
+                        PieceRef p4 = new PieceRef(null, "CH", "Cheque");
+            BddObject.insertInDatabase(p4, connection);
+            
+                        PieceRef p5 = new PieceRef(null, "FC", "Facture client");
+            BddObject.insertInDatabase(p5, connection);
+            
+                        PieceRef p6 = new PieceRef(null, "FF", "Facture FRN");
+            BddObject.insertInDatabase(p6, connection);
+            
+                        PieceRef p7 = new PieceRef(null, "LC", "Lettre de change");
+            BddObject.insertInDatabase(p7, connection);
+            
+                        PieceRef p8 = new PieceRef(null, "PC", "Piece de caisse");
+            BddObject.insertInDatabase(p8, connection);
+            
+                        PieceRef p9 = new PieceRef(null, "RL", "Releve");
+            BddObject.insertInDatabase(p9, connection);
+            
+                        PieceRef p10 = new PieceRef(null, "SA", "Salaire");
+            BddObject.insertInDatabase(p10, connection);
+            
+                        PieceRef p11 = new PieceRef(null, "VI", "Virement");
+            BddObject.insertInDatabase(p11, connection);
+
+Journal journal = new Journal();
+BddObject.createSequence(journal, connection);
+BddObject.createTable(journal, connection);
+
+ContentJournal cj = new ContentJournal();
+BddObject.createSequence(cj, connection);
+BddObject.createTable(cj, connection);
+
+
+            
+Exercice exo = new Exercice();
+BddObject.createSequence(exo, connection);
+BddObject.createTable(exo, connection);
